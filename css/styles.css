@@ -1,0 +1,84 @@
+body {
+    background-color: #ECECEC;
+    font-size: 14px;
+    width: 75%;
+    margin: auto;
+}
+
+.left-logo {
+    float: left;
+}
+
+.right-logo {
+    float: right;
+}
+
+.home-logo {
+    background-color: #bdc3c7;
+}
+
+.top-nav {
+    clear: both;
+    margin-top: 10px;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.top-nav li {
+    float: left;
+}
+
+.top-nav li:hover {
+    background-color: #DCDCDC;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.top-nav li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.top-nav li.dropdown {
+    display: inline-block;
+}
+
+.top-nav .dropdown-content {
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    position: absolute;
+    min-width: 160px;
+}
+
+.top-nav .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.top-nav .dropdown-content a:hover {
+    background-color: red;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.top-nav .dropdown:hover .dropdown-content {
+    display: block;
+}
