@@ -1,10 +1,11 @@
 body {
     background-color: #ECECEC;
-    font-size: 14px;
-    width: 75%;
+    font-size: 12px;
+    width: 80%;
     margin: auto;
 }
 
+/*top header start*/
 .left-logo {
     float: left;
 }
@@ -12,17 +13,19 @@ body {
 .right-logo {
     float: right;
 }
+/*top header end*/
 
+/*top nav start*/
 .home-logo {
     background-color: #bdc3c7;
 }
 
-.top-nav {
+#top-nav {
     clear: both;
     margin-top: 10px;
 }
 
-.top-nav ul {
+#top-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -30,11 +33,11 @@ body {
     background-color: white;
 }
 
-.top-nav li {
+#top-nav li {
     float: left;
 }
 
-.top-nav li:hover {
+#top-nav li:hover {
     background-color: #DCDCDC;
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
@@ -43,7 +46,7 @@ body {
     transition: background-color 0.5s;
 }
 
-.top-nav li a, .dropbtn {
+#top-nav li a, .dropbtn {
     display: inline-block;
     color: black;
     text-align: center;
@@ -51,18 +54,18 @@ body {
     text-decoration: none;
 }
 
-.top-nav li.dropdown {
+#top-nav li.dropdown {
     display: inline-block;
 }
 
-.top-nav .dropdown-content {
+#top-nav .dropdown-content {
     background-color: rgba(0,0,0,0.7);
     display: none;
     position: absolute;
     min-width: 160px;
 }
 
-.top-nav .dropdown-content a {
+#top-nav .dropdown-content a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -70,7 +73,7 @@ body {
     text-align: left;
 }
 
-.top-nav .dropdown-content a:hover {
+#top-nav .dropdown-content a:hover {
     background-color: red;
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
@@ -79,6 +82,88 @@ body {
     transition: background-color 0.5s;
 }
 
-.top-nav .dropdown:hover .dropdown-content {
+#top-nav .dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+#top-nav li:last-child {
+    background-color: red;
+    float: right;
+}
+
+#top-nav li:last-child a {
+    color: white;
+}
+
+#top-nav li:last-child:hover {
+    background-color: rgba(0,0,0,0.7);
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+/*top nav end*/
+
+
+/*slide show banner*/
+
+
+#banner {
+    text-align: center;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.square {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .square:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#footer {
+    margin-top: 50px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer .left-footer {
+    clear: both;
+    float: left;
+}
+
+#footer .right-footer {
+    float: right;
 }

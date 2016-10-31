@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="top-header">
+<div id="top-header">
     <div class="left-logo">
         <img src="images/logo.png" alt="Logo">
     </div>
@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<nav class="top-nav">
+<nav id="top-nav">
     <ul>
         <li class="home-logo"><a href="#home"><img src="images/house-logo-md.png" width="20px" height="20px" alt=""></a></li>
         <li class="dropdown">
@@ -78,8 +78,136 @@
                 <a href="#">Honda Communities</a>
             </div>
         </li>
+
+        <li class="dropdown">
+            <a href="#" class="dropbtn">MOTORSPORT & TECHNOLOGY</a>
+            <div class="dropdown-content">
+                <a href="#">MotorSport News</a>
+                <a href="#">Honda Technology</a>
+                <a href="#">Tips & Tricks</a>
+            </div>
+        </li>
     </ul>
 </nav>
+
+<div id="banner">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="images/hondaDayBANNER.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/HRVmugenBANNER.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/brvBANNER.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/brioBANNER2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/hrvMugenBANNER%20(1).jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/mobilioBANNER.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/brioAdBANNER.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/jazzBANNER.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/civicAdBANNER.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/hrvmugen1BANNER.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/civicBANNER.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/civicprestBANNER.jpg" style="width:100%">
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <span class="square" onclick="currentSlide(1)"></span>
+        <span class="square" onclick="currentSlide(2)"></span>
+        <span class="square" onclick="currentSlide(3)"></span>
+        <span class="square" onclick="currentSlide(4)"></span>
+        <span class="square" onclick="currentSlide(5)"></span>
+        <span class="square" onclick="currentSlide(6)"></span>
+        <span class="square" onclick="currentSlide(7)"></span>
+        <span class="square" onclick="currentSlide(8)"></span>
+        <span class="square" onclick="currentSlide(9)"></span>
+        <span class="square" onclick="currentSlide(10)"></span>
+        <span class="square" onclick="currentSlide(11)"></span>
+        <span class="square" onclick="currentSlide(12)"></span>
+    </div>
+</div>
+
+
+<div id="bottom-header">
+    <div class="right-logo">
+        <img src="images/twitter-icon-circle-logo.png" alt="twitter" width="50px" height="50px">
+        <img src="images/Instagram-icon.png" alt="twitter" width="50px" height="50px">
+        <img src="images/youtube_circle-512.png" alt="twitter" width="50px" height="50px">
+        <img src="images/facebook-2.png" alt="twitter" width="50px" height="50px">
+    </div>
+</div>
+
+<div id="footer">
+    <div class="left-footer">
+        <a href="#">Honda Worldwide</a>
+        <span> | </span>
+        <a href="#">Corporate</a>
+    </div>
+
+    <div class="right-footer">
+        <a href="#">Copyright © 2016 Honda Indonesia Website</a>
+        <span> | </span>
+        <a href="#">Terms of Use</a>
+        <span> | </span>
+        <a href="#">Privacy Statement</a>
+    </div>
+</div>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var square = document.getElementsByClassName("square");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < square.length; i++) {
+            square[i].className = square[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        square[slideIndex-1].className += " active";
+    }
+</script>
 
 </body>
 </html>
